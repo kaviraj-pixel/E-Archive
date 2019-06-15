@@ -139,16 +139,16 @@ $mail = new PHPMailer;
 $mail->isSMTP();                               
 $mail->Host = 'smtp.gmail.com;';
 $mail->SMTPAuth = true;                       
-$mail ->Username = 'kaviraj.writer123@gmail.com';
-$mail ->Password = '05/09/1998loveu';
+$mail ->Username = '#your email';
+$mail ->Password = '#yout email password';
 $mail->SMTPSecure = 'tls';                           
 $mail->Port = 587;                                   
-$mail->setFrom('kaviraj.writer123@gmail.com', 'From Event');
+$mail->setFrom('#your email', 'From Event');
 if($department=="CSE"){
-$mail->addAddress('kishore1.16cs@kct.ac.in', ''); 
+$mail->addAddress('#receivers password', ''); 
 }
 if($department=="ECE"){
-$mail->addAddress('rajavarman.16ec@kct.ac.in', ''); 
+$mail->addAddress('#receivers password', ''); 
 }
 $mail->IsHTML(true);                                 
 $mail->Subject = 'Event Notification';
